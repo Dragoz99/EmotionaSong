@@ -10,8 +10,6 @@ public class Guest extends Utente{
                                String email,
                                String passwd){
 
-
-
     }
     private void Login(String email, String passwd){
 
