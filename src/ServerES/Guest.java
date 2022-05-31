@@ -1,6 +1,8 @@
-package ClientES;
+package ServerES;
 
-public class Guest extends Utente{
+import ClientES.Utente;
+
+public class Guest extends Utente {
     private void Registrazione(String nome,
                                String cognome,
                                String cf,

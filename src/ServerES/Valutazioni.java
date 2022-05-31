@@ -1,4 +1,6 @@
-package ClientES;
+package ServerES;
+
+import ClientES.Emozioni;
 
 import java.io.Serializable;
 

@@ -1,12 +1,10 @@
-package ClientES;
+package ServerES;
+
+import ClientES.Brano;
 
 import java.util.List;
 
 public abstract class Utente {
-
-    public Utente(){
-
-    }
 
     private int id_brano_selezionato;
 
@@ -14,6 +12,8 @@ public abstract class Utente {
 
     private List<Brano> lista_brani_cercati ;
 
+
+    // provvisorio
     private void cercaBranoMusicale(String titolo){
 
     }
@@ -25,9 +25,10 @@ public abstract class Utente {
 
     }
 
-    //=============================================================
-    /*
-    * =============================================================*/
+    public Utente(){
+
+    }
+
     public int getIdBrano(){
         return id_brano_selezionato;
     }
