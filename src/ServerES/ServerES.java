@@ -1,9 +1,34 @@
 package ServerES;
 
 import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
 import java.util.List;
 
 public class ServerES implements UserInterface{
+
+    public static final String NAME_REG = "";
+
+    //========[MAIN]===========
+    public static void main(String[] args){
+        try{
+            ServerES obj = new ServerES();
+            UserInterface stub = (UserInterface) UnicastRemoteObject.exportObject(obj,3939);
+            Registry reg = LocateRegistry.createRegistry(1099);
+            reg.rebind(NAME_REG,stub);
+            System.err.println("Server ready");
+        }catch(Exception e){
+            System.err.println("Server exception: "+ e.toString());
+            e.printStackTrace();
+        }
+    }
+
+    //======== oggetto classe =========
+    public ServerES(){}
+
+
+
     @Override
     public void registrazione() throws RemoteException {
 
@@ -77,6 +102,13 @@ public class ServerES implements UserInterface{
     @Override
     public String[] getIdPlaylist(int idUser) throws RemoteException {
         return new String[0];
+    }
+
+
+    //=============[TEST FUN]============
+    @Override
+    public String testRmiFun(String a) throws RemoteException {
+        return a.toUpperCase();
     }
 
     @Override

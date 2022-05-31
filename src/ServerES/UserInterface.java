@@ -22,6 +22,8 @@ public interface UserInterface  extends Remote {
     String[] visualizzaidCanzoni(int idPlaylist) throws RemoteException;
     String[] getNomiPlaylist(int idUser) throws RemoteException;
     String[] getIdPlaylist(int idUser) throws RemoteException;
+    //=====================================
+    String testRmiFun(String a) throws RemoteException;
 
 
 }

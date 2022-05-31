@@ -95,9 +95,6 @@ public class Registrato extends Utente {
 
     }
 
-
-
-
     public void VisualizzaPlayList(String nomePlaylist){
 
     }
@@ -127,8 +124,6 @@ public class Registrato extends Utente {
     public void inserisciBranoPlaylist(int id_playlist){
 
     }
-
-
 
 
 }
