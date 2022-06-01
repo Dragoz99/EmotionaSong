@@ -1,6 +1,8 @@
-package ClientES;
+package ServerES;
 
-public class Registrato extends Utente{
+
+
+public class Registrato extends Utente {
     private String nome;
     private String cognome;
     private String cf;
@@ -93,9 +95,6 @@ public class Registrato extends Utente{
 
     }
 
-
-
-
     public void VisualizzaPlayList(String nomePlaylist){
 
     }
@@ -125,8 +124,6 @@ public class Registrato extends Utente{
     public void inserisciBranoPlaylist(int id_playlist){
 
     }
-
-
 
 
 }

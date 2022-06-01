@@ -1,6 +1,6 @@
 package ClientES;
 
-public class Guest extends Utente{
+public class Guest extends Utente {
     private void Registrazione(String nome,
                                String cognome,
                                String cf,

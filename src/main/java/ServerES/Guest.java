@@ -1,6 +1,6 @@
 package ServerES;
 
-import ClientES.Utente;
+
 
 public class Guest extends Utente {
     private void Registrazione(String nome,

@@ -1,6 +1,4 @@
-package ServerES;
-
-import ClientES.Utente;
+package ClientES;
 
 public class Registrato extends Utente {
     private String nome;
@@ -95,6 +93,9 @@ public class Registrato extends Utente {
 
     }
 
+
+
+
     public void VisualizzaPlayList(String nomePlaylist){
 
     }
@@ -124,6 +125,8 @@ public class Registrato extends Utente {
     public void inserisciBranoPlaylist(int id_playlist){
 
     }
+
+
 
 
 }

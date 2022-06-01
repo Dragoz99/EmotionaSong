@@ -1,7 +1,5 @@
 package ServerES;
 
-import ClientES.Brano;
-
 import java.util.List;
 
 public abstract class Utente {

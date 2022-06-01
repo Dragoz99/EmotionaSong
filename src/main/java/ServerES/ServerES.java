@@ -1,12 +1,13 @@
 package ServerES;
 
+
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.List;
 
-public class ServerES implements UserInterface{
+public class ServerES implements UserInterface {
 
     public static final String NAME_REG = "";
 
@@ -75,6 +76,11 @@ public class ServerES implements UserInterface{
     }
 
     @Override
+    public boolean inserisciValutazione(Valutazioni a) throws RemoteException {
+        return false;
+    }
+
+    @Override
     public String[] visualizzaNomiPlaylist(int idUser) throws RemoteException {
         return new String[0];
     }
@@ -111,8 +117,5 @@ public class ServerES implements UserInterface{
         return a.toUpperCase();
     }
 
-    @Override
-    public boolean inserisciValutazione(Valutazioni a) throws RemoteException {
-        return false;
-    }
+
 }

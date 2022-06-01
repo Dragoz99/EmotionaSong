@@ -1,7 +1,5 @@
 package ServerES;
 
-import ClientES.Emozioni;
-
 import java.io.Serializable;
 
 public class Valutazioni implements Serializable {
